@@ -1,6 +1,9 @@
 # ForttioriChallenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
+## Parecer do Desenvolvedor:
+
+Esse Projeto foi gerado em [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
+A escolha do Angular se dá devido as ferramentas disponiveis no framework.
 
 ## Development server
 
