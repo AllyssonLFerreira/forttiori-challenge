@@ -1,0 +1,32 @@
+<div class="container">
+  <form class="filter -style"> 
+    <p>Vamos Agilizar?</p>
+    <input 
+      type="text" 
+      placeholder="Digite o nome da linha de ônibus que você procura?"
+      (input)="targetBus($event)"
+    /> 
+    <input 
+      type="text" 
+      placeholder="Digite o nome da linha de lotação que você procura?"
+      (input)="targetLot($event)"
+    /> 
+  </form>
+  <div class="card">
+    <div class="list">
+      <h3>Linhas de Ônibus em Poa</h3>
+      <div *ngFor="let bus of allBus" class="content">
+        <p> Código: {{bus.codigo}}</p>
+        <p> Linha: {{bus.nome}}</p>
+        <!-- <p><a routerLink="itinerario/{{bus.id}}"> Ver Itinerário</a></p> -->
+      </div>
+    </div>
+    <div class="list">
+      <h3>Linhas de Lotação em Poa</h3>
+      <div *ngFor="let lot of allLot" class="content -style">
+        <p> Código: {{lot.codigo}}</p>
+        <p> Linha: {{lot.nome}}</p>
+        <!-- <p><a routerLink="itinerario/{{lot.id}}"> Ver Itinerário</a></p> -->
+      </div> 
+    </div>
+</div>
